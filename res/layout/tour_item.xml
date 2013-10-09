@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/news_item_background"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:orientation="vertical"
+    >
+    
+   
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            >
+            <ImageView 
+                android:id="@+id/tour_item_img"
+                android:layout_height="70dp"
+                android:layout_width="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/maerdaifu"
+                />
+            <TextView 
+            	android:id="@+id/tour_item_name"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_toRightOf="@id/tour_item_img"
+            	android:text="阳江闸坡休闲半自助二天团" 
+            	android:textColor="@color/grey21"
+            	android:textSize="16sp"
+            	android:singleLine="true"
+            	android:layout_marginLeft="2dp"
+         	/>
+           
+            <TextView 
+                android:id="@+id/tour_item_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tour_item_img"
+                android:layout_below="@id/tour_item_name"
+                android:layout_marginLeft="2dp"
+                android:text="￥3699"
+                android:textSize="14sp"
+                android:textColor="@color/blue"
+                />
+             <TextView 
+                android:id="@+id/tour_item_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tour_item_img"
+                android:layout_below="@id/tour_item_money"
+                android:layout_marginLeft="6dp"
+                android:text="3日游" 
+                android:textSize="14sp"
+                android:textColor="@color/bisque"
+                />
+             <!--ImageView 
+                android:id="@+id/tour_item_native"
+                android:layout_width="14dp"
+                android:layout_height="18dp"
+                android:src="@drawable/native_ico"
+                android:layout_toRightOf="@id/tour_item_img"
+                android:layout_below="@id/tour_item_days"
+                />
+            <  TextView 
+                android:id="@+id/tour_item_where"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海南省三亚市三亚"                 
+                android:layout_toRightOf="@id/tour_item_native"
+                android:layout_below="@id/tour_item_days"
+                android:textSize="14sp"
+                android:textColor="@color/grey21"      
+                android:layout_marginLeft="2dp"
+                android:singleLine="true"
+                /-->
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tour_item_img"
+                android:layout_below="@id/tour_item_days"
+                android:orientation="horizontal"
+                android:layout_marginLeft="2dp"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="["
+                    android:textSize="14sp"
+                	android:textColor="@color/grey21"
+                    />
+                <TextView 
+                    android:id="@+id/tour_item_bossname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大学生假期旅游工作社"
+                    android:textSize="14sp"
+                	android:textColor="@color/grey21"
+                    />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="]"
+                    android:textSize="14sp"
+                	android:textColor="@color/grey21"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    
+</LinearLayout>

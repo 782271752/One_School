@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:orientation="vertical">
+   
+     <LinearLayout
+        android:id="@+id/room_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/gray"
+        >
+        <RelativeLayout 
+        	
+        	android:layout_width="fill_parent"
+        	android:layout_height="40dp"
+        	android:background="@color/orange"
+      		android:gravity="center_vertical"
+      		
+        >
+        	<TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="查看空间"
+            	android:textSize="20dp"
+            	android:textColor="@color/white"
+            	android:layout_alignParentRight="true"
+            />
+   		</RelativeLayout>
+   		
+        <ListView 
+            android:id="@+id/room_child"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:fadingEdge="none" 
+            android:cacheColorHint="#0000"
+             
+            ></ListView>
+    </LinearLayout>
+    
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/gray"
+        >
+        
+    	<RelativeLayout 
+        	
+        	android:layout_width="fill_parent"
+        	android:layout_height="45dp"
+        	android:background="@drawable/all_background"
+      
+        >
+        	<TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="名片"
+            	android:textSize="20dp"
+            	android:textColor="@color/white"
+            	android:layout_centerInParent="true"
+            />
+          	<Button
+        		android:id="@+id/slide"
+        		android:layout_width="40dp"
+        		android:layout_height="fill_parent"
+        		android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+        		android:background="@drawable/slide"
+        		android:layout_marginRight="10dp"
+        		
+        	></Button> 
+   		</RelativeLayout>
+   		
+    	
+    	
+   		<ScrollView 
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:layout_margin="4dp"
+   		    android:scrollbars="none"
+   		    android:fadingEdge="none"
+   		    >
+          	 <LinearLayout      
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:orientation="vertical">
+   				<RelativeLayout 
+        			android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+        			android:background="@color/brown"
+        			android:padding="10dp"
+        			android:layout_marginTop="10dp"
+        			android:layout_marginLeft="6dp"
+        			android:layout_marginRight="6dp"
+        			android:orientation="vertical" >
+    				<LinearLayout
+        				android:id="@+id/card_head_layout"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:background="@color/gray" 
+        				android:padding="10dp">
+
+         				<ImageView 
+        					android:id="@+id/card_head"
+        					android:layout_width="100dp"
+        					android:layout_height="100dp"
+        					android:src="@drawable/head" />
+        
+   		 			</LinearLayout>
+   					<TextView 
+    	    			android:id="@+id/card_name"
+    	    			android:layout_toRightOf="@id/card_head_layout"
+    	    			android:layout_width="wrap_content"
+    	    			android:layout_height="wrap_content"
+    	    			android:textSize="30sp"
+    	    			android:text="Smile"
+    	    			android:textColor="#ffff"
+    	    			android:layout_marginLeft="10dp"
+    	    			android:textStyle="bold"/>
+   					<RelativeLayout 
+   		    			android:id="@+id/card_sex_layout"
+   		    			android:layout_width="wrap_content"
+   		   	 			android:layout_height="wrap_content"
+   		    			android:layout_toRightOf="@id/card_head_layout"
+    	    			android:layout_below="@id/card_name"
+    	    			android:layout_marginLeft="10dp"
+   		    		>
+   		    			<TextView 
+    	    				android:id="@+id/card_sex"
+    	    
+    	    				android:layout_width="wrap_content"
+    	    				android:layout_height="wrap_content"
+    	    				android:textSize="25sp"
+    	    				android:text="♀"
+    	    				android:textColor="#ffff"
+    	    
+    	    				android:textStyle="bold"/>
+   						<Button 
+   		    				android:id="@+id/card_attention"
+   		    				android:layout_toRightOf="@id/card_sex"
+   		    				android:layout_width="match_parent"
+   		    				android:layout_height="28dp"
+   		    				 
+   		    				android:background="@null"
+   		    				android:text="关注此好友"
+   		    				android:textSize="18sp"
+   		    				android:textColor="@color/white"
+   		    				android:gravity="center_vertical"/>
+   					</RelativeLayout>
+   					<TextView 
+    	    			android:id="@+id/card_age"
+    	    			android:layout_toRightOf="@id/card_head_layout"
+    	    			android:layout_below="@id/card_sex_layout"
+    	    			android:layout_width="wrap_content"
+    	    			android:layout_height="wrap_content"
+    	    			android:textSize="18sp"
+    	    			android:text="23岁"
+    	    			android:singleLine="true"
+    	    			android:textColor="#ffff"
+    	    			android:layout_marginLeft="10dp"/>
+   					<TextView 
+    	    			android:id="@+id/card_school"
+    	    			android:layout_toRightOf="@id/card_head_layout"
+    	    			android:layout_below="@id/card_age"
+    	    			android:layout_width="wrap_content"
+    	    			android:layout_height="wrap_content"
+    	    			android:textSize="17sp"
+    	    			android:text="肇庆学院"
+    	    			android:singleLine="true"
+    	    			android:textColor="#ffff"
+    	    			android:layout_marginLeft="10dp"/>
+   				</RelativeLayout>
+   				<RelativeLayout 
+   	    			android:layout_width="fill_parent"
+   	    			android:layout_height="wrap_content"
+   	    			android:layout_marginTop="10dp"
+   	    			android:padding="20dp"
+   	    			android:background="#CCCCCC"
+   	    			android:layout_marginLeft="6dp"
+        			android:layout_marginRight="6dp"
+   	    			>
+   				    <TextView
+   				        android:id="@+id/card_signature"
+   				        android:layout_width="fill_parent"
+   				        android:layout_height="wrap_content"
+   				        android:text="机会多但昰很多人都很短视,志在一时捞金而已"
+   				        android:textColor="@color/grey"
+   				        android:textSize="20sp"
+   				        ></TextView>
+   				</RelativeLayout>
+   				<LinearLayout 
+   				    android:layout_width="fill_parent"
+   				    android:layout_height="wrap_content"
+   				    android:layout_marginLeft="6dp"
+   				    android:layout_marginRight="6dp"
+   				    android:layout_marginTop="10dp"
+   				    android:orientation="horizontal"
+   				    
+   				    >
+   				    <LinearLayout 
+   				    	android:layout_width="wrap_content"
+   				    	android:layout_height="wrap_content"
+   				    	android:layout_weight="1"
+   				    	android:orientation="vertical"
+   				    	android:background="@color/blue"
+   				    	android:gravity="center"
+   				    	 
+   				    	android:padding="10dp">
+   				    	<TextView 
+   				        	android:layout_width="wrap_content"
+   				        	android:layout_height="wrap_content"   		
+   				        	android:text="关注"
+   				        	android:textColor="@color/white"
+   				        	android:textSize="20sp"		        	
+   				        	/>
+   				    	<TextView 
+   				    	    android:id="@+id/card_follow_count"
+   				        	android:layout_width="wrap_content"
+   				        	android:layout_height="wrap_content"   		
+   				        	android:text="9"
+   				        	android:textColor="@color/white"
+   				        	android:layout_marginTop="5dp"
+   				        	android:textSize="18sp"		        	
+   				        	/>
+   				    	</LinearLayout>
+   				    	
+   				    <LinearLayout 
+   				    	android:layout_width="wrap_content"
+   				    	android:layout_height="wrap_content"
+   				    	android:layout_weight="1"
+   				    	android:orientation="vertical"
+   				    	android:background="@color/blue"
+   				    	android:gravity="center"
+   				    	android:layout_marginLeft="5dp"
+   				    	android:padding="10dp">
+   				    	<TextView 
+   				        	android:layout_width="wrap_content"
+   				        	android:layout_height="wrap_content"   		
+   				        	android:text="粉丝"
+   				        	android:textColor="@color/white"
+   				        	android:textSize="20sp"		        	
+   				        	/>
+   				    	<TextView 
+   				    	    android:id="@+id/card_fans_count"
+   				        	android:layout_width="wrap_content"
+   				        	android:layout_height="wrap_content"   		
+   				        	android:text="100"
+   				        	android:textColor="@color/white"
+   				        	android:layout_marginTop="5dp"
+   				        	android:textSize="18sp"		        	
+   				        	/>
+   				    	</LinearLayout>
+   				    	
+   				     
+   				    	
+   				</LinearLayout>
+   				
+   				
+   				<LinearLayout 
+   				    android:layout_width="fill_parent"
+   				    android:layout_height="wrap_content"
+   				    android:layout_marginLeft="6dp"
+   				    android:layout_marginRight="6dp"
+   				    android:layout_marginTop="10dp"
+   				    android:orientation="horizontal"
+   				    
+   				    >
+   				    <LinearLayout 
+   				    	android:layout_width="wrap_content"
+   				    	android:layout_height="wrap_content"
+   				    	android:layout_weight="1"
+   				    	android:orientation="vertical"
+   				    	android:background="@color/orange"
+   				    	android:gravity="center"
+   				    	 
+   				    	android:padding="5dp">
+   				    	<TextView 
+   				        	android:layout_width="wrap_content"
+   				        	android:layout_height="wrap_content"   		
+   				        	android:text="微说"
+   				        	android:textColor="@color/white"
+   				        	android:textSize="20sp"		        	
+   				        	/>
+   				    	<TextView 
+   				    	    android:id="@+id/card_follow_count"
+   				        	android:layout_width="wrap_content"
+   				        	android:layout_height="wrap_content"   		
+   				        	android:text="9"
+   				        	android:textColor="@color/white"
+   				        	android:layout_marginTop="5dp"
+   				        	android:textSize="18sp"		        	
+   				        	/>
+   				    	</LinearLayout>
+   				    	
+   				    <LinearLayout 
+   				    	android:layout_width="wrap_content"
+   				    	android:layout_height="wrap_content"
+   				    	android:layout_weight="1"
+   				    	android:orientation="vertical"
+   				    	android:background="@color/orange"
+   				    	android:gravity="center"
+   				    	android:layout_marginLeft="5dp"
+   				    	android:padding="5dp">
+   				    	<TextView 
+   				        	android:layout_width="wrap_content"
+   				        	android:layout_height="wrap_content"   		
+   				        	android:text="帮忙"
+   				        	android:textColor="@color/white"
+   				        	android:textSize="20sp"		        	
+   				        	/>
+   				    	<TextView 
+   				    	    android:id="@+id/card_fans_count"
+   				        	android:layout_width="wrap_content"
+   				        	android:layout_height="wrap_content"   		
+   				        	android:text="100"
+   				        	android:textColor="@color/white"
+   				        	android:layout_marginTop="5dp"
+   				        	android:textSize="18sp"		        	
+   				        	/>
+   				    	</LinearLayout>
+   				    	
+   				     <LinearLayout 
+   				    	android:layout_width="wrap_content"
+   				    	android:layout_height="wrap_content"
+   				    	android:layout_weight="1"
+   				    	android:orientation="vertical"
+   				    	android:background="@color/orange"
+   				    	android:gravity="center"
+   				    	android:layout_marginLeft="5dp"
+   				    	android:padding="5dp">
+   				    	<TextView 
+   				        	android:layout_width="wrap_content"
+   				        	android:layout_height="wrap_content"   		
+   				        	android:text="许愿"
+   				        	android:textColor="@color/white"
+   				        	android:textSize="20sp"		        	
+   				        	/>
+   				    	<TextView 
+   				    	    android:id="@+id/card_fans_count"
+   				        	android:layout_width="wrap_content"
+   				        	android:layout_height="wrap_content"   		
+   				        	android:text="100"
+   				        	android:textColor="@color/white"
+   				        	android:layout_marginTop="5dp"
+   				        	android:textSize="18sp"		        	
+   				        	/>
+   				    	</LinearLayout>
+   				     
+   				    	
+   				</LinearLayout>
+   				
+   		</LinearLayout>
+   	</ScrollView>
+   </LinearLayout>
+   
+    
+   
+    
+</FrameLayout>

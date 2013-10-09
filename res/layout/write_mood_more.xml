@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:background="@color/white">
+    <ImageButton 
+        android:id="@+id/weishuo_take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cam_button"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        />
+     <ImageButton 
+        android:id="@+id/weishuo_select_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_img"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+		android:layout_toRightOf="@id/weishuo_take_photo"
+        />
+     <ImageButton 
+        android:id="@+id/weishuo_expression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/expression_button"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+		android:layout_toRightOf="@id/weishuo_select_image"
+        />
+    <ImageButton 
+        android:id="@+id/weishuo_at_somebody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/at_button"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+		android:layout_toRightOf="@id/weishuo_expression"
+        />
+    
+    
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DreamActivity!</string>
+    <string name="app_name">同校网</string>
+    <string name="login_register_link">没有帐号？ <a href="http://fanfou.com/register">注册</a></string>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:paddingBottom="3dp"
+    android:paddingRight="3dp"
+    >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:padding="4dp"
+        android:background="@color/white"
+        >
+    <TextView 
+        android:id="@+id/services_item_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="专业电脑维修" 
+        android:textColor="@color/brown"
+        android:textSize="22sp"
+        android:gravity="left"
+        android:singleLine="true"/>
+    <TextView 
+        android:id="@+id/services_item_boss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D1 330" 
+        
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:layout_below="@id/services_item_message" 	 
+        android:singleLine="true"/>
+             
+    
+    
+            
+    <TextView 
+        android:id="@+id/services_item_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="厚德书院D1 330 专业电脑维修，还有各种电子产品"
+        android:layout_below="@id/services_item_boss"
+        android:textSize="16sp"
+        android:textColor="@color/blue"      
+        android:layout_marginLeft="2dp"
+        android:singleLine="true"/>
+        </RelativeLayout>
+</LinearLayout>

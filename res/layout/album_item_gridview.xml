@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   	android:background="@color/gray"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/album_item_gv_title"
+        android:layout_width="fill_parent"
+       	android:layout_height="45dp"
+       	android:background="@drawable/all_background"
+    	android:gravity="center_vertical"	
+        >
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="相片"
+           android:textSize="20sp"
+           android:textColor="@color/white"
+           android:layout_centerInParent="true"
+            />
+   	</RelativeLayout>
+	<GridView  
+	    android:layout_below="@id/album_item_gv_title"
+    	android:id="@+id/album_gridview"
+    	android:layout_width="fill_parent"  
+    	android:layout_height="fill_parent"
+    	android:listSelector="@color/gray"
+    	android:numColumns="3"
+    	android:stretchMode="columnWidth"
+    	android:gravity="center"
+    	android:scrollbars="@null"  
+    	android:layout_marginBottom="40dp"
+    	android:horizontalSpacing="3dp"
+    	android:verticalSpacing="3dp"
+    	/>
+	<LinearLayout
+         
+        android:id="@+id/album_linear_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="4dp" />
+
+        <TextView
+            android:id="@+id/album_gridview_more_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="点击加载更多"
+            android:textColor="@color/black"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/album_gridview_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="4dp" />
+    </LinearLayout>
+	
+	</RelativeLayout>
+<!-- android:verticalSpacing="5dp"
+    android:horizontalSpacing="5dp" -->

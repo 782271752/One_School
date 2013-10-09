@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/gray"
+    android:orientation="horizontal"
+    >
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <li.widget.MyImageView
+            android:id="@+id/parttime_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:scaleType="matrix"
+             
+           
+            >
+        </li.widget.MyImageView>
+        <li.widget.MyImageView
+            android:id="@+id/food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:layout_margin="2dp"
+            android:src="@drawable/food"
+            >
+        </li.widget.MyImageView>
+ 	    <li.widget.MyImageView
+            android:id="@+id/gezi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:layout_margin="2dp"
+            android:src="@drawable/gezipu"
+            ></li.widget.MyImageView>
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <li.widget.MyImageView
+            android:id="@+id/tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:layout_margin="2dp"
+            android:src="@drawable/tour"
+            >
+            
+        </li.widget.MyImageView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <li.widget.MyImageView
+                android:id="@+id/transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:layout_margin="2dp"
+                android:src="@drawable/transfer"
+                ></li.widget.MyImageView>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <li.widget.MyImageView
+                    android:id="@+id/shopping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/tuansale"
+                    >
+                </li.widget.MyImageView>
+                <li.widget.MyImageView
+                    android:id="@+id/hotel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/hotel"
+                    ></li.widget.MyImageView>
+                
+            </LinearLayout>
+        </LinearLayout>
+        <li.widget.MyImageView
+         	android:id="@+id/wish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:layout_margin="2dp"
+            android:src="@drawable/wish"
+             ></li.widget.MyImageView>
+    </LinearLayout>    
+        
+    
+    
+</LinearLayout>

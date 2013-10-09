@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_focused="true"  android:drawable="@drawable/gray_down" />
+  <item android:state_pressed="true"  android:drawable="@drawable/gray_down" />
+  <!-- 当该组件能使用时显示该图片；false，当该组件不能使用时显示该图片。 -->
+  <item android:drawable="@drawable/gray_up" />      
+</selector>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:paddingBottom="3dp"
+    android:paddingRight="3dp"
+     
+    >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:padding="4dp"
+        android:background="@color/white"
+         
+        >
+    <TextView 
+        android:id="@+id/food_item_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="潮汕猪扒饭" 
+        android:textColor="@color/brown"
+        android:textSize="22sp"
+        android:gravity="left"
+        android:drawablePadding="4dp"
+        android:drawableRight="@drawable/food_img"
+        android:singleLine="true"/>
+    <TextView 
+        android:id="@+id/food_item_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="潮汕美食" 
+        
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:layout_below="@id/food_item_message" 	 
+        android:singleLine="true"/>
+             
+    <TextView 
+        android:id="@+id/food_item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥8"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/orange"
+        android:layout_below="@id/food_item_message"/>
+    <ImageView 
+        android:id="@+id/food_item_native"
+        android:layout_width="18dp"
+        android:layout_height="22dp"
+        android:src="@drawable/native_ico"
+        android:layout_below="@id/food_item_money"/> 
+            
+    <TextView 
+        android:id="@+id/food_item_where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="肇庆学院大塘面村附近"
+        android:layout_below="@id/food_item_money"
+        android:layout_toRightOf="@id/food_item_native"
+        android:textSize="16sp"
+        android:textColor="@color/grey"      
+        android:layout_marginLeft="2dp"
+        android:singleLine="true"/>
+        </RelativeLayout>
+</LinearLayout>

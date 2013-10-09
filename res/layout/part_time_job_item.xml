@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="4dp"
+    android:background="@drawable/news_item_background">
+    <TextView 
+        android:id="@+id/part_time_job_item_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="大学生兼职家教"
+        android:textColor="@color/grey21"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textSize="17sp"/>
+    <TextView 
+        android:id="@+id/part_time_job_item_num"
+        android:layout_below="@id/part_time_job_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="16sp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/orange" />
+    
+    <TextView 
+        android:id="@+id/part_time_job_item_num_text"
+        android:layout_below="@id/part_time_job_item_name"
+        android:layout_toRightOf="@id/part_time_job_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人"
+        android:textSize="16sp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/grey" />
+    
+    <TextView 
+        android:id="@+id/part_time_job_item_shu"
+        android:layout_below="@id/part_time_job_item_name"
+        android:layout_toRightOf="@id/part_time_job_item_num_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" | "
+        android:textSize="16sp"
+        android:textColor="@color/blue" />
+    
+    <TextView 
+        android:id="@+id/part_time_job_item_sex_text"
+        android:layout_below="@id/part_time_job_item_name"
+        android:layout_toRightOf="@id/part_time_job_item_shu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性别"
+        android:textSize="16sp"
+        android:textColor="@color/grey" />
+    <TextView 
+        android:id="@+id/part_time_job_item_sex"
+        android:layout_below="@id/part_time_job_item_name"
+        android:layout_toRightOf="@id/part_time_job_item_sex_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不限"
+        android:textSize="16sp"
+        android:textColor="@color/blue" />
+    
+    
+    <TextView 
+        android:id="@+id/part_time_job_item_money_textview"
+        android:layout_below="@id/part_time_job_item_name"       
+        android:layout_alignParentRight="true" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="元/小时"
+        android:textSize="16sp"
+        android:textColor="@color/grey21" />
+    <TextView 
+        android:id="@+id/part_time_job_item_money"
+        android:layout_below="@id/part_time_job_item_name"
+        android:layout_toLeftOf="@id/part_time_job_item_money_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9.8"
+        android:textSize="16sp"
+        android:layout_marginRight="4dp"
+        android:textColor="@color/orange" />
+    
+    <TextView 
+        android:id="@+id/part_time_job_item_boss"
+        android:layout_below="@id/part_time_job_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="肇庆正作家教服务中心"
+        android:textSize="14sp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/grey" />
+    
+    <TextView 
+        android:id="@+id/part_time_job_item_time"
+        android:layout_below="@id/part_time_job_item_num"
+        android:layout_alignParentRight="true" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2013-5-19"
+        android:textSize="14sp"
+        android:layout_marginRight="4dp"
+        android:textColor="@color/grey" />
+</RelativeLayout>

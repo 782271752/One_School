@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <resources>
+       <style name="blue_button">
+        <item name="android:background">@drawable/blue_button_selector</item>
+        <item name="android:textColor">@color/simiple_button_color</item>
+        <item name="android:textStyle">bold</item>
+   	   </style>
+   	   
+   	   <style name="tab_radio">
+   	       <item name="android:textSize">12dp</item>
+   	       <item name="android:layout_width">fill_parent</item>
+   	       <item name="android:layout_height">wrap_content</item>
+   	       <item name="android:background">@drawable/radio_bg</item>
+   	       <item name="android:ellipsize">marquee</item>
+   	       <item name="android:layout_weight">1</item>
+   	       <item name="android:button">@null</item>
+   	       <item name="android:singleLine">true</item>
+   	       <item name="android:gravity">center_horizontal</item>
+   	       <item name="android:paddingTop">5dp</item>
+   	       <item name="android:drawablePadding">2dp</item>
+   	   </style>
+   	   
+   	   <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+  
+    </style>  
+    
+   	   <style name="DialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+    
+	 <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+        
+    </resources>

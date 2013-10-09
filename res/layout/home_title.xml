@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/title_bg"
+    >
+    <ImageButton
+        android:id="@+id/home_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/write_button" 
+        ></ImageButton>
+    <Button
+        android:id="@+id/home_chose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="微说"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:background="@null"
+        android:textColor="@color/grey"
+        />
+    <ImageButton
+        android:id="@+id/home_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/refresh"
+        android:background="@null"
+        ></ImageButton>
+</RelativeLayout>

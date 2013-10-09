@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+	<!-- ImageView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:src="@drawable/seaone"
+	    android:scaleType="centerCrop"
+	    /-->
+    <RelativeLayout 
+        android:id="@+id/fenlei_title_layout"
+        android:layout_width="fill_parent"
+       	android:layout_height="45dp"
+       	android:background="@drawable/ab_solid_custom_blue_inverse_holo"
+    	android:gravity="center_vertical"	
+        >
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="分类"
+           android:textSize="20sp"
+           android:textColor="@color/white"
+           android:layout_centerInParent="true"
+            />
+   	</RelativeLayout>
+
+   	<li.widget.MyTurnplateView
+   	    android:id="@+id/fenlei_view"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_below="@id/fenlei_title_layout" />
+    
+</RelativeLayout>

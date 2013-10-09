@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_login">
+    <RelativeLayout 
+        android:id="@+id/head_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/all_background"
+        android:layout_alignParentTop="true"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置头像"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+   </RelativeLayout>
+   
+    
+	<RelativeLayout 
+        android:id="@+id/head_body"
+        android:layout_below="@id/head_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        >
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_rectangle" 
+        android:padding="10dp"
+        >
+		
+      
+         <ImageView 
+        	android:id="@+id/headselect_head"
+        	android:layout_width="200dp"
+        	android:layout_height="200dp"
+        	android:visibility="invisible"
+        	
+        />
+        
+    </RelativeLayout>
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/head_button_layout"
+        android:layout_below="@id/head_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        >
+          <Button 
+            android:id="@+id/headselect_select_head"
+             
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:text="本地相册"
+            android:gravity="center"
+            style="@style/blue_button"
+            />
+          <Button 
+            android:id="@+id/headselect_take_photo"
+            android:layout_below="@id/headselect_select_head"
+            android:layout_marginTop="5dp"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:text="拍照"
+            android:gravity="center"
+            style="@style/blue_button"
+            />
+         <Button 
+            android:id="@+id/headsend_head"
+            android:layout_below="@id/headselect_take_photo"
+            android:layout_marginTop="8dp"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:textColor="@color/grey"
+            android:text="提交"
+            android:gravity="center"
+            android:background="@drawable/android_big_button_x"
+            
+            />
+    </RelativeLayout>
+     
+   
+</RelativeLayout>

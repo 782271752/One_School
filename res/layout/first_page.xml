@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     
+    android:background="@color/white"
+    
+    >
+  <RelativeLayout  
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/ab_solid_custom_blue_inverse_holo"
+    android:id="@+id/home_title_layout"
+    >
+     
+    <Button
+        android:id="@+id/home_chose"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:text="帮忙"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:background="@null"
+        android:textColor="@color/white"
+        android:drawableRight="@drawable/handpointup"
+        android:drawablePadding="10dp"
+        />
+     
+</RelativeLayout>
+   	<li.widget.DragListView
+   	    android:id="@+id/home_list"
+   	    android:layout_below="@id/home_title_layout"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="match_parent"
+   	    android:background="@color/gray"
+   	    android:cacheColorHint="@color/gray"
+   	    android:listSelector="@color/white"
+   	    android:divider="@null"
+   	    />
+   <RelativeLayout
+       	android:id="@+id/home_write_layout"
+        android:layout_width="65dip"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"        
+        android:layout_alignParentRight="true"
+          >
+
+        <ImageView
+            android:id="@+id/home_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            
+            android:background="@drawable/ugc_menutriger_close_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="180dip"
+        android:layout_height="180dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/level2"
+         >
+
+        <ImageView
+            android:id="@+id/home_weishuo_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dip"
+             android:layout_marginBottom="10dp"
+            android:background="@drawable/ugc_icon_type_lbs" />
+
+        <ImageView
+            android:id="@+id/home_help_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="6dip"
+            android:background="@drawable/ugc_icon_type_photo" />
+
+        <ImageView
+            android:id="@+id/home_wish_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ugc_icon_type_record" />
+    </RelativeLayout>
+</RelativeLayout>

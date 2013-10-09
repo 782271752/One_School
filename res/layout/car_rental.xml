@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/li.dream"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    >
+    <RelativeLayout 
+        android:id="@+id/car_rental_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/all_background"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="租车"      
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+   </RelativeLayout>
+   
+   <FrameLayout 
+       android:id="@+id/car_rental_gallery_layout"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/car_rental_title_layout"
+       android:orientation="vertical"
+       android:visibility="invisible"
+       >
+       <Gallery 
+       		 
+       		android:id="@+id/car_rental_gallery"
+       		android:layout_width="fill_parent"
+       		android:layout_height="wrap_content"
+       		android:spacing="5dip"
+       />
+       <LinearLayout 
+        	android:id="@+id/car_rental_view_layout"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	
+        	android:layout_gravity="bottom"
+        	android:background="#65000000"
+        	android:orientation="vertical" >
+			 <li.widget.FlowIndicator 
+			    android:id="@+id/car_rental_view"
+			    android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	app:count="0"
+            	android:layout_marginTop="2dp"
+            	android:layout_marginBottom="2dp"
+            	app:point_normal_color="#45000000"
+            	app:point_radius="5dip"
+            	app:point_seleted_color="#ffffff"
+            	app:point_size="5dip"
+            	app:space="10dip"
+			 ></li.widget.FlowIndicator>
+    	</LinearLayout>
+   </FrameLayout>
+   	<li.widget.DragListView
+   	    android:id="@+id/car_rental_list"
+   	    android:layout_below="@id/car_rental_gallery_layout"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="fill_parent"
+   	    android:cacheColorHint="@color/white"
+   	    android:background="@color/gray"
+   	    />
+    
+</RelativeLayout>

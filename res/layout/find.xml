@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray">
+    <RelativeLayout 
+        android:id="@+id/find_title_layout"
+        android:layout_width="fill_parent"
+       	android:layout_height="45dp"
+       	android:background="@drawable/all_background"
+    	android:gravity="center_vertical"	
+        >
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="搜索"
+           android:textSize="20sp"
+           android:textColor="@color/white"
+           android:layout_centerInParent="true"
+            />
+   	</RelativeLayout>
+   	
+    <RelativeLayout 
+        android:id="@+id/find_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_title_layout"
+        android:padding="6dp"
+        android:gravity="center_horizontal"
+        >
+        <EditText 
+            android:id="@+id/find_edittext"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:imeOptions="actionDone"
+            android:maxLength="25"
+            android:paddingLeft="3dip"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_x"
+            android:singleLine="true" 
+            android:layout_alignParentLeft="true"
+            
+            />
+        <Button 
+            android:id="@+id/find_button"
+            android:layout_width="80dp"
+            android:layout_height="39dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_to_orange"
+            android:layout_toRightOf="@id/find_edittext"
+             
+            />
+    </RelativeLayout>
+    <ImageView 
+   	    android:id="@+id/find_line"
+		android:layout_width="fill_parent"
+		android:layout_height="1dip"
+		android:background="@color/note_gray" 
+		android:layout_below="@id/find_layout"
+		android:layout_marginTop="4dp"
+		android:layout_marginBottom="4dp"
+		 />
+    
+</RelativeLayout>

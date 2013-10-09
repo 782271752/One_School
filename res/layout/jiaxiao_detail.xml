@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    >
+    <RelativeLayout 
+        android:id="@+id/jiaxiao_detail_title_layout"
+        android:layout_width="fill_parent"
+       	android:layout_height="40dp"
+       	android:background="@drawable/all_background"
+    	android:gravity="center_vertical"	
+        >
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="详情"
+           android:textSize="20sp"
+           android:textColor="@color/white"
+           android:layout_centerInParent="true"
+            />
+   	</RelativeLayout>
+   	<ScrollView 
+	    android:id="@+id/jiaxiao_detail_scroll" 
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:layout_below="@id/jiaxiao_detail_title_layout"
+		android:layout_marginBottom="15dp"
+		android:fadingEdge="none">	 
+   		<LinearLayout
+   	    	android:id="@+id/jiaxiao_detail_layout"
+   	    	android:layout_width="fill_parent"
+   	    	android:layout_height="wrap_content"
+   	    	android:orientation="vertical">
+   		     
+   		    
+   		    <RelativeLayout 
+   		   	    android:layout_width="fill_parent"
+   		   	    android:layout_height="wrap_content"
+   		   	    android:gravity="center_horizontal"
+   		   	    android:layout_marginTop="10dp"
+   		   	    >
+   		   	     <RelativeLayout 
+   		   	        android:layout_width="212dp"
+   		        	android:layout_height="162dp"
+   		        	android:layout_marginLeft="5dp"
+   		        	android:layout_marginTop="5dp"
+   		        	android:background="#CCCCCC"
+   		   	         ></RelativeLayout>
+   		   	     <LinearLayout 
+   		   	     	android:layout_width="wrap_content"    
+   		   	     	android:layout_height="wrap_content"
+   		   	     	android:padding="6dp"
+   		   	     	android:background="@color/white">
+   		   	         <ImageView 
+   		        		android:id="@+id/jiaxiao_detail_image"
+   		        		android:layout_width="200dp"
+   		        		android:layout_height="150dp"
+   		        		android:src="@drawable/food"
+   		        		android:scaleType="centerCrop"/>
+   		   	     </LinearLayout>
+   		   	</RelativeLayout>
+   		    <LinearLayout 
+   		        android:id="@+id/jiaxiao_detail_name_layout"		        
+   		        android:layout_width="fill_parent"
+   		        android:layout_height="wrap_content"
+   		        android:orientation="vertical"
+   		        android:layout_margin="5dp"
+   		        android:background="@drawable/bg4"
+   		        >
+   		        <TextView 
+				    android:id="@+id/jiaxiao_detail_name"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_marginTop="4dip" 
+					android:textSize="22sp" 
+					android:text="肇庆鸿景驾校"
+					android:textColor="@color/blue"
+					android:layout_marginLeft="10dip"
+					 />
+   		        <ImageView 
+					android:layout_width="fill_parent"
+					android:layout_height="1dip"
+					android:background="@color/note_gray" 
+					 />
+   		         
+				
+				<LinearLayout
+				     
+				    android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:gravity="left"
+					android:paddingLeft="4dp"
+					android:layout_marginBottom="6dp"
+					android:layout_marginTop="6dp"
+					  >
+					
+					<TextView 
+					     
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+						android:textColor="@color/grey21" 
+						android:text="发布时间:"
+						android:paddingLeft="4dp" 
+						/>
+					<TextView 
+					    android:id="@+id/jiaxiao_detail_time"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+					 	android:text="2013-04-23"
+						 
+						android:layout_marginLeft="10dp"
+						android:textColor="@color/grey21"
+						 
+						/>
+				</LinearLayout>
+   		    </LinearLayout>
+   		    
+   		    <LinearLayout 
+   		        
+   		        android:layout_width="fill_parent"
+   		        android:layout_height="wrap_content"
+   		         
+   		        android:background="@drawable/bg4"
+   		        android:orientation="vertical"
+   		        android:layout_margin="5dp"
+   		        
+   		        >
+   		        <TextView 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" 
+					android:layout_marginLeft="10dip" 
+					android:layout_marginTop="2dip"				
+					android:textSize="18sp"
+					android:textColor="@color/blue"
+					android:text="资源信息" 
+					 
+					/>
+   		        <ImageView 
+					android:layout_width="fill_parent"
+					android:layout_height="1dip"
+					android:background="@color/note_gray" 
+					 />
+   		        <LinearLayout
+				    
+				    android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="left"
+					android:paddingLeft="4dp"
+					android:layout_marginTop="6dp"
+					  >
+					
+					<TextView 
+					    
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+						android:textColor="@color/grey21" 
+						android:text="费用:"
+						 
+						/>
+					<TextView 
+					    android:id="@+id/jiaxiao_detail_money"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+					 	android:text="3799元"					 
+						android:layout_marginLeft="10dp"
+						android:textColor="@color/orange"
+						 
+						/>
+					 
+				</LinearLayout>
+				<LinearLayout
+				     
+				    android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:gravity="left"
+					android:paddingLeft="4dp"
+					android:layout_marginTop="6dp"
+					android:orientation="horizontal"
+					  >
+					
+					<TextView 
+					    
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+						android:textColor="@color/grey21" 
+						android:text="联系人:"
+						 
+						/>
+					<TextView 
+					    android:id="@+id/jiaxiao_detail_boss"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+					 	android:text="李同学"						 
+						android:layout_marginLeft="5dp"
+						android:textColor="@color/orange"
+						 
+						/>
+					 
+				</LinearLayout>
+   		        
+				<LinearLayout
+				     
+				    android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:paddingLeft="4dp"
+					 
+					android:orientation="horizontal"
+					  >
+					
+					<TextView 
+					     
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+						android:textColor="@color/grey21" 
+						android:text="长号:"
+						 
+						/>
+					<TextView 
+					    android:id="@+id/jiaxiao_detail_longtel"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+					 	android:text="13760048757"
+						 
+						android:layout_marginLeft="5dp"
+						android:textColor="@color/orange"
+						 
+						/>
+					 <Button 
+   		                android:id="@+id/jiaxiao_detail_longtel_button"
+   		                 
+   		               	android:layout_width="wrap_content"
+   		                android:layout_height="wrap_content"
+   		                android:background="@drawable/phone_button"
+   		                android:layout_marginLeft="10dp"
+   		                />
+				</LinearLayout>
+   		        
+				<LinearLayout
+				     
+				    android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:paddingLeft="4dp"
+					 
+					android:orientation="horizontal"
+					  >
+					
+					<TextView 
+					     
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+						android:textColor="@color/grey21" 
+						android:text="短号:"
+						 
+						/>
+					<TextView 
+					    android:id="@+id/jiaxiao_detail_shorttel"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+					 	android:text="658757"
+						 
+						android:layout_marginLeft="5dp"
+						android:textColor="@color/orange"
+						 
+						/>
+					 <Button 
+   		                android:id="@+id/jiaxiao_detail_shorttel_button"  		                 
+   		               	android:layout_width="wrap_content"
+   		                android:layout_height="wrap_content"
+   		                android:background="@drawable/phone_button"
+   		                android:layout_marginLeft="10dp"
+   		                />
+				</LinearLayout>
+				<LinearLayout
+				    
+				    android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="left"
+					android:paddingLeft="4dp"
+					android:layout_marginTop="6dp"
+					  >
+					
+					<TextView 
+					    
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+						android:textColor="@color/grey21" 
+						android:text="学车地点:"
+						 
+						/>
+					<TextView 
+					    android:id="@+id/jiaxiao_detail_where"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+					 	android:text="大冲训练场"					 
+						android:layout_marginLeft="10dp"
+						android:textColor="@color/orange"
+						 
+						/>
+					 
+				</LinearLayout>
+				
+   		        <RelativeLayout
+				    android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:gravity="left"
+					android:paddingLeft="4dp"
+					 android:layout_marginTop="6dp"
+					android:layout_marginBottom="6dp"
+					  >
+					
+					<TextView 
+					    android:id="@+id/jiaxiao_detail_describe_text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp" 
+						android:textColor="@color/grey21" 
+						android:text="描述:"
+						 
+						/>
+					<WebView 
+					    android:id="@+id/jiaxiao_detail_describe"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:layout_below="@id/jiaxiao_detail_describe_text"						 
+						 android:background="@color/white"/>
+				</RelativeLayout>
+   		    </LinearLayout>	    
+   		</LinearLayout>
+   </ScrollView>
+</RelativeLayout>

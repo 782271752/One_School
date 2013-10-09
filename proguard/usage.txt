@@ -1,0 +1,297 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+cn.thinkit.libtmfe.test.JNI:
+====    public JNI()
+li.adapter.BrayAdapter:
+====    63:106:public BrayAdapter(android.content.Context,int)
+====    63:118:public BrayAdapter(android.content.Context,int,int)
+====    63:130:public BrayAdapter(android.content.Context,int,java.lang.Object[])
+====    63:143:public BrayAdapter(android.content.Context,int,int,java.lang.Object[])
+====    63:168:public BrayAdapter(android.content.Context,int,int,java.util.List)
+====    176:185:public void add(java.lang.Object)
+====    194:203:public void insert(java.lang.Object,int)
+====    211:219:public void remove(java.lang.Object)
+====    225:233:public void clear()
+====    242:244:public void sort(java.util.Comparator)
+====    270:271:public void setNotifyOnChange(boolean)
+====    288:288:public android.content.Context getContext()
+====    313:313:public int getPosition(java.lang.Object)
+====    372:373:public void setDropDownViewResource(int)
+====    395:396:public static li.adapter.BrayAdapter createFromResource(android.content.Context,int,int)
+li.adapter.hotelAdapter
+li.adapter.sortAdapter
+li.base.baseActivity
+li.bitmap.FinalBitmap:
+====    77:82:public static li.bitmap.FinalBitmap create(android.content.Context,java.lang.String)
+====    95:102:public static li.bitmap.FinalBitmap create(android.content.Context,java.lang.String,float)
+====    113:120:public static li.bitmap.FinalBitmap create(android.content.Context,java.lang.String,int)
+====    133:141:public static li.bitmap.FinalBitmap create(android.content.Context,java.lang.String,float,int)
+====    153:161:public static li.bitmap.FinalBitmap create(android.content.Context,java.lang.String,int,int)
+====    174:183:public static li.bitmap.FinalBitmap create(android.content.Context,java.lang.String,float,int,int)
+====    196:205:public static li.bitmap.FinalBitmap create(android.content.Context,java.lang.String,int,int,int)
+====    214:215:public li.bitmap.FinalBitmap configLoadingImage(android.graphics.Bitmap)
+====    232:233:public li.bitmap.FinalBitmap configLoadfailImage(android.graphics.Bitmap)
+====    251:252:public li.bitmap.FinalBitmap configBitmapMaxHeight(int)
+====    260:261:public li.bitmap.FinalBitmap configBitmapMaxWidth(int)
+====    290:291:public void configCompressFormat(android.graphics.Bitmap$CompressFormat)
+====    298:300:public li.bitmap.FinalBitmap configCalculateBitmapSizeWhenDecode(boolean)
+====    320:321:public li.bitmap.FinalBitmap configMemoryCacheSize(int)
+====    329:330:public li.bitmap.FinalBitmap configMemoryCachePercent(float)
+====    338:339:public li.bitmap.FinalBitmap configDiskCacheSize(int)
+====    400:409:public void display(android.widget.ImageView,java.lang.String,int,int)
+====    412:420:public void display(android.widget.ImageView,java.lang.String,android.graphics.Bitmap)
+====    424:433:public void display(android.widget.ImageView,java.lang.String,android.graphics.Bitmap,android.graphics.Bitmap)
+====    436:447:public void display(android.widget.ImageView,java.lang.String,int,int,android.graphics.Bitmap,android.graphics.Bitmap)
+====    451:452:public void display(android.widget.ImageView,java.lang.String,li.core.BitmapDisplayConfig)
+====    487:494:private li.core.BitmapDisplayConfig getDisplayConfig()
+====    588:592:public android.graphics.Bitmap getBitmapFromCache(java.lang.String)
+====    601:601:public android.graphics.Bitmap getBitmapFromMemoryCache(java.lang.String)
+====    610:610:public android.graphics.Bitmap getBitmapFromDiskCache(java.lang.String)
+====    614:615:public void setExitTasksEarly(boolean)
+====    621:622:public void onResume()
+====    628:630:public void onPause()
+====    636:637:public void onDestroy()
+====    643:644:public void clearCache()
+====    651:652:public void clearCache(java.lang.String)
+====    658:659:public void clearMemoryCache()
+====    666:667:public void clearMemoryCache(java.lang.String)
+====    674:675:public void clearDiskCache()
+====    682:683:public void clearDiskCache(java.lang.String)
+====    691:692:public void flushCache()
+====    698:699:public void closeCache()
+====    706:709:public void exitTasksEarly(boolean)
+====    716:722:public void pauseWork(boolean)
+li.bitmap.FinalBitmap$CacheExecutecTask:
+    public static final int MESSAGE_CLEAR
+    public static final int MESSAGE_INIT_DISK_CACHE
+    public static final int MESSAGE_FLUSH
+    public static final int MESSAGE_CLOSE
+    public static final int MESSAGE_CLEAR_MEMORY
+    public static final int MESSAGE_CLEAR_DISK
+    public static final int MESSAGE_CLEAR_KEY
+    public static final int MESSAGE_CLEAR_KEY_IN_MEMORY
+    public static final int MESSAGE_CLEAR_KEY_IN_DISK
+li.core.AsyncTask:
+    private static final java.lang.String LOG_TAG
+    private static final int CORE_POOL_SIZE
+    private static final int MAXIMUM_POOL_SIZE
+    private static final int KEEP_ALIVE
+    private static final int MESSAGE_POST_RESULT
+    private static final int MESSAGE_POST_PROGRESS
+====    128:129:public static void init()
+====    133:134:public static void setDefaultExecutor(java.util.concurrent.Executor)
+====    188:188:public final li.core.AsyncTask$Status getStatus()
+====    338:338:public final java.lang.Object get()
+====    358:358:public final java.lang.Object get(long,java.util.concurrent.TimeUnit)
+====    460:461:public static void execute(java.lang.Runnable)
+====    478:482:protected final varargs void publishProgress(java.lang.Object[])
+li.core.BitmapCache:
+    private static final java.lang.String TAG
+    private static final int DEFAULT_MEM_CACHE_SIZE
+    private static final int DEFAULT_DISK_CACHE_SIZE
+    private static final int DEFAULT_COMPRESS_QUALITY
+    private static final int DISK_CACHE_INDEX
+    private static final boolean DEFAULT_MEM_CACHE_ENABLED
+    private static final boolean DEFAULT_DISK_CACHE_ENABLED
+    private static final boolean DEFAULT_CLEAR_DISK_CACHE_ON_START
+    private static final boolean DEFAULT_INIT_DISK_CACHE_ON_CREATE
+====    315:316:public void setCompressFormat(android.graphics.Bitmap$CompressFormat)
+li.core.BitmapCache$ImageCacheParams:
+====    322:335:public BitmapCache$ImageCacheParams(java.io.File)
+====    364:365:public void setCompressFormat(android.graphics.Bitmap$CompressFormat)
+li.core.BitmapCommonUtils:
+    private static final java.lang.String TAG
+====    12:12:public BitmapCommonUtils()
+li.core.BitmapDecoder:
+    private static final java.lang.String TAG
+====    13:13:private BitmapDecoder()
+====    17:28:public static android.graphics.Bitmap decodeSampledBitmapFromResource(android.content.res.Resources,int,int,int)
+====    33:44:public static android.graphics.Bitmap decodeSampledBitmapFromFile(java.lang.String,int,int)
+li.core.BitmapDisplayConfig$AnimationType
+li.core.BitmapProcess:
+    private static final java.lang.String TAG
+    private static final int DEFAULT_CACHE_SIZE
+    private static final int DISK_CACHE_INDEX
+====    39:40:public void configCalculateBitmap(boolean)
+====    150:162:public void closeCacheInternal()
+li.core.FileNameGenerator:
+====    7:7:public FileNameGenerator()
+li.core.LruDiskCache:
+    static final java.lang.String JOURNAL_FILE
+    static final java.lang.String JOURNAL_FILE_TMP
+    static final java.lang.String MAGIC
+    static final java.lang.String VERSION_1
+    static final long ANY_SEQUENCE_NUMBER
+    private static final java.lang.String CLEAN
+    private static final java.lang.String DIRTY
+    private static final java.lang.String REMOVE
+    private static final java.lang.String READ
+    private static final int IO_BUFFER_SIZE
+====    189:198:public static java.lang.String readFully(java.io.Reader)
+====    548:548:public long maxSize()
+====    557:557:public synchronized long size()
+====    719:719:private static java.lang.String inputStreamToString(java.io.InputStream)
+====    512:512:static synthetic li.core.LruDiskCache$Editor access$5(li.core.LruDiskCache,java.lang.String,long)
+====    718:718:static synthetic java.lang.String access$6(java.io.InputStream)
+====    104:104:static synthetic java.nio.charset.Charset access$7()
+li.core.LruDiskCache$Editor:
+====    782:789:public java.io.InputStream newInputStream(int)
+====    798:799:public java.lang.String getString(int)
+====    822:829:public void set(int,java.lang.String)
+li.core.LruDiskCache$Snapshot:
+====    742:742:public li.core.LruDiskCache$Editor edit()
+====    756:756:public java.lang.String getString(int)
+li.core.LruMemoryCache:
+====    239:239:public final synchronized int size()
+====    248:248:public final synchronized int maxSize()
+====    255:255:public final synchronized int hitCount()
+====    263:263:public final synchronized int missCount()
+====    270:270:public final synchronized int createCount()
+====    277:277:public final synchronized int putCount()
+====    284:284:public final synchronized int evictionCount()
+====    292:292:public final synchronized java.util.Map snapshot()
+li.db.StuDBHelper:
+    private static final java.lang.String TAG
+    public static final int VERSION
+li.download.SimpleHttpDownloader:
+    private static final java.lang.String TAG
+    private static final int IO_BUFFER_SIZE
+li.dream.BuildConfig
+li.dream.R:
+====    10:10:public R()
+li.dream.R$anim
+li.dream.R$array
+li.dream.R$attr
+li.dream.R$color
+li.dream.R$drawable
+li.dream.R$id
+li.dream.R$layout
+li.dream.R$raw
+li.dream.R$string
+li.dream.R$style
+li.dream.R$styleable:
+====    762:762:public R$styleable()
+li.dream.SetheadImageActivity:
+    public static final int NONE
+    public static final int PHOTOHRAPH
+    public static final int PHOTOZOOM
+    public static final int PHOTORESOULT
+    public static final java.lang.String IMAGE_UNSPECIFIED
+li.dream.albumActivity:
+    private android.os.Bundle bundle
+li.dream.albumItemActivity:
+    private li.entity.Album album
+li.dream.album_m_photo:
+    private static final int NONE
+    private static final int DRAG
+    private static final int ZOOM
+li.dream.hotelActivity:
+    static final int SCROLL_ACTION
+li.dream.hoteldetailActivity:
+    private android.widget.TextView bossname
+    private android.widget.TextView longtel
+    private android.widget.ImageButton phone
+    private android.widget.ImageButton local
+li.dream.loginActivity:
+    private android.widget.CheckBox auto
+    private java.lang.String login_feedback
+====    153:162:public java.lang.String salts(int)
+li.dream.modifiActivity:
+    private static final int DATE_PICKER_ID
+li.dream.sortActivity:
+    private android.widget.GridView gridview
+li.encoder.BASE64Decoder
+li.encoder.CEFormatException
+li.encoder.CEStreamExhausted
+li.encoder.CharacterDecoder
+li.encoder.CharacterEncoder:
+====    185:187:public void encode(byte[],java.io.OutputStream)
+====    228:259:private byte[] getBytes(java.nio.ByteBuffer)
+====    272:274:public void encode(java.nio.ByteBuffer,java.io.OutputStream)
+====    285:286:public java.lang.String encode(java.nio.ByteBuffer)
+====    301:330:public void encodeBuffer(java.io.InputStream,java.io.OutputStream)
+====    339:341:public void encodeBuffer(byte[],java.io.OutputStream)
+====    349:359:public java.lang.String encodeBuffer(byte[])
+====    372:374:public void encodeBuffer(java.nio.ByteBuffer,java.io.OutputStream)
+====    385:386:public java.lang.String encodeBuffer(java.nio.ByteBuffer)
+li.entity.User:
+    public int uid
+    public java.lang.String head_image_url
+    public boolean fist
+====    17:17:public int getId()
+====    23:24:public void setId(int)
+====    29:29:public int getUid()
+====    35:36:public void setUid(int)
+====    41:41:public java.lang.String getName()
+====    47:48:public void setName(java.lang.String)
+====    53:53:public java.lang.String getPasswrod()
+====    59:60:public void setPasswrod(java.lang.String)
+====    65:65:public java.lang.String getHead_image_url()
+====    71:72:public void setHead_image_url(java.lang.String)
+====    77:77:public boolean isAtuo()
+====    83:84:public void setAtuo(boolean)
+====    89:89:public boolean isFist()
+====    95:96:public void setFist(boolean)
+li.entity.album_pictures:
+====    16:16:public java.lang.String getTid()
+li.entity.hotel
+li.entity.weishuo
+li.entity.youji:
+====    20:20:public java.lang.String getId()
+====    102:102:public java.lang.String getComments_count()
+====    110:110:public java.lang.String getShares_count()
+====    118:118:public java.lang.String getFavours_count()
+====    126:126:public java.lang.String getBrowse_count()
+li.exception.AfinalException:
+    private static final long serialVersionUID
+====    12:13:public AfinalException(java.lang.String)
+====    16:17:public AfinalException(java.lang.Throwable)
+====    20:21:public AfinalException(java.lang.String,java.lang.Throwable)
+li.exception.ViewException:
+    private static final long serialVersionUID
+li.utils.AESPlus:
+====    10:10:public AESPlus()
+====    23:31:public static java.lang.String decrypt(java.lang.String,java.lang.String)
+li.utils.ConnWeb:
+====    173:202:public java.util.List gethotel()
+li.utils.Constans:
+====    4:4:public Constans()
+li.utils.DownUtil
+li.utils.ExitManager:
+====    26:36:public void exit()
+li.utils.FileUtil:
+====    8:8:public FileUtil()
+li.viewholder.advertiseHolder
+li.viewholder.hotelHolder
+li.viewholder.sortHolder
+li.viewholder.youjiHolder:
+    public android.widget.TextView share_count
+    public android.widget.TextView comment_count
+    public android.widget.TextView like_count
+    public android.widget.TextView browse_count
+li.widget.DragListView:
+    private static final int RATIO
+li.widget.FlowIndicator:
+====    60:65:public void next()
+====    68:73:public void previous()
+li.widget.MyImageView:
+====    44:45:public void SetAnimationOnOff(boolean)
+li.widget.MyTurnplateView:
+    private static final int PONIT_NUM
+li.widget.RotatView
+li.widget.RotatView$1
+li.widget.RotatView$NoBitMapError
+li.widget.RotatView$VRecord
+m.framework.ui.MenuAdapter
+m.framework.ui.SlidingMenu
+m.framework.ui.SlidingMenu$1
+m.framework.ui.SlidingMenu$1$1
+m.framework.ui.SlidingMenu$2
+m.framework.ui.SlidingMenu$3
+m.framework.ui.SlidingMenu$3$1
+m.framework.ui.SlidingMenu$4
+m.framework.ui.SlidingMenu$5
+m.framework.ui.SlidingMenu$6
+m.framework.ui.SlidingMenuGroup
+m.framework.ui.SlidingMenuItem
+vi.com.gdi.bgl.android.java.EnvDrawText

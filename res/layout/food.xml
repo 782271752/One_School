@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    >
+    <RelativeLayout 
+        android:id="@+id/food_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/all_background"
+        >
+        <TextView 
+            android:id="@+id/food_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="外卖"
+            
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+   </RelativeLayout>
+   
+   	<li.widget.DragListView
+   	    android:id="@+id/food_list"
+   	    android:layout_below="@id/food_title_layout"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="fill_parent"
+   	    android:cacheColorHint="@color/white"
+   	    android:background="@color/gray"
+   	    
+   	    />
+    
+</RelativeLayout>

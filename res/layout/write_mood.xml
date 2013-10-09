@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/write_mood_title"/>
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+       
+        >
+        
+        <EditText 
+            android:id="@+id/write_edittt"
+            android:layout_width="220dp"
+            android:layout_height="160dp"
+            android:background="@null"
+            android:hint="既然来了，就写点什么呗...."
+            android:gravity="top"
+            />
+        <ImageView 
+            android:id="@+id/write_img"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_toRightOf="@id/write_edittt"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/hotel"
+            />
+    </RelativeLayout>
+   <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/write_mood_more"/>
+    </RelativeLayout>
+</LinearLayout>

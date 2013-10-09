@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_login"
+    >
+    <LinearLayout 
+        android:id="@+id/user_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bg"
+        android:gravity="center"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置个人资料"
+            android:textSize="20dp"
+            android:textColor="@color/grey"
+            />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_below="@id/user_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+       
+        >
+        
+        <EditText 
+            android:id="@+id/nicheng"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入昵称"
+            android:singleLine="true"
+            android:inputType="text"
+            />
+        <RelativeLayout
+            android:id="@+id/sex_layout"
+            android:layout_below="@id/nicheng"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+             <TextView 
+				android:id="@+id/sex_text"
+				android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="性别"
+                android:textColor="#ff333333"
+                android:textSize="16.0sp" 
+                android:layout_marginLeft="10dp"/>
+            <RadioButton
+                android:id="@+id/male_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/login_remember"
+                 
+                android:layout_toRightOf="@id/sex_text"
+                android:checked="true"
+                android:text="男"
+                android:layout_marginLeft="25dp"
+                />
+            <RadioButton
+                android:id="@+id/female_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_toRightOf="@id/male_cb"
+                android:layout_marginLeft="20dp"
+                android:button="@drawable/login_remember"
+                android:text="女"
+                />   
+        </RelativeLayout>
+       
+       
+        <Button 
+            android:id="@+id/regist"
+            android:layout_below="@id/sex_layout"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            style="@style/blue_button"
+            android:text="下一步"
+            android:gravity="center"
+            
+            />
+        
+    </RelativeLayout>
+    
+    
+</RelativeLayout>

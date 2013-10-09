@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+	android:orientation="vertical"
+ 	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:background="@drawable/all_background"
+  	>
+	<LinearLayout
+       	android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+        android:gravity="center" 
+        android:orientation="vertical"           
+        >
+       
+            
+            
+       
+    <!-- 登录框 -->
+    <RelativeLayout
+    	android:id="@+id/login_div"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="15dp"
+    	android:layout_margin="15dp"
+    	android:background="@drawable/background_rectangle"
+    	>    
+   	 	
+	    <!-- 用户名 text -->
+	   
+	    <AutoCompleteTextView
+	    	android:id="@+id/username"
+	    	android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:imeOptions="actionDone"
+            android:maxLength="25"
+            android:paddingLeft="3dip"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_x"
+            android:singleLine="true" 
+	    	android:hint="请输入用户名"
+	    	 
+	    	/>
+	   
+	    />
+	    <!-- 密码 input -->
+	    <EditText
+	    	android:id="@+id/pwd"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="40dp"
+	    	android:layout_below="@id/username"
+ 
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:imeOptions="actionDone"
+            android:maxLength="25"
+            android:paddingLeft="3dip"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_x"
+	    	android:layout_marginTop="5dp"
+	    	android:password="true"
+	    	android:singleLine="true"
+	    	android:inputType="textPassword"    
+	    	android:hint="请输入密码"
+	    	/>	   
+	    
+	   
+	    
+	    <!-- 登陆 button -->
+	    <Button
+	    	android:id="@+id/login"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="30dp"
+	    	android:layout_below="@id/pwd"
+	    	android:layout_alignRight="@id/pwd"
+	    	android:layout_marginTop="10dp"
+	    	android:gravity="center"   
+	    	android:text="登陆"
+	   		android:background="@drawable/blue_to_orange"
+	   		android:textColor="@color/white"
+	   		 />    
+	   
+	  
+	    
+	    
+	</RelativeLayout>
+	
+	<RelativeLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      >
+        <TextView 
+            android:id="@+id/no_name"
+            android:text="没有账号?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+         />
+        <TextView 
+            android:id="@+id/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/no_name"
+            android:layout_marginLeft="5dp"
+            android:text="点此注册"
+            android:textSize="28sp"
+            android:textColor="@color/orange"
+            />
+	    <ImageView 
+	        android:src="@drawable/logo"
+	        android:layout_width="200dp"
+	        android:layout_height="200dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginBottom="15dp"
+	         />
+	    
+	         />
+	    </RelativeLayout>
+	     </LinearLayout>
+</LinearLayout>

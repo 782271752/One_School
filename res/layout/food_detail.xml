@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    >
+    <RelativeLayout 
+        android:id="@+id/food_detail_title_layout"
+        android:layout_width="fill_parent"
+       	android:layout_height="45dp"
+       	android:background="@drawable/all_background"
+    	android:gravity="center_vertical"	
+        >
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="详情"
+           android:textSize="20sp"
+           android:textColor="@color/white"
+           android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:id="@+id/food_detail_share"
+            android:layout_width="54dp"
+            android:layout_height="fill_parent"             
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/share_button" />
+   	</RelativeLayout>
+   	<ScrollView 
+	    android:id="@+id/food_detail_scroll" 
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:layout_below="@id/food_detail_title_layout"
+		 
+		android:fadingEdge="none">	 
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:orientation="vertical">
+   		   	<RelativeLayout 
+   		   	    android:layout_width="fill_parent"
+   		   	    android:layout_height="wrap_content"
+   		   	    android:gravity="center_horizontal"
+   		   	    android:layout_marginTop="10dp"
+   		   	    >
+   		   	     <RelativeLayout 
+   		   	        android:layout_width="162dp"
+   		        	android:layout_height="162dp"
+   		        	android:layout_marginLeft="5dp"
+   		        	android:layout_marginTop="5dp"
+   		        	android:background="#CCCCCC"
+   		   	         ></RelativeLayout>
+   		   	     <LinearLayout 
+   		   	     	android:layout_width="wrap_content"    
+   		   	     	android:layout_height="wrap_content"
+   		   	     	android:padding="6dp"
+   		   	     	android:background="@color/white">
+   		   	         <ImageView 
+   		        		android:id="@+id/food_detail_image"
+   		        		android:layout_width="150dp"
+   		        		android:layout_height="150dp"
+   		        		android:src="@drawable/food"
+   		        		android:scaleType="centerCrop"/>
+   		   	     </LinearLayout>
+   		   	</RelativeLayout>
+   		   	
+   		   	 <RelativeLayout 
+   		        android:layout_width="fill_parent"
+   		        android:layout_height="wrap_content"
+   		        android:layout_marginTop="10dp"
+   		        android:background="#CCCCCC"
+   		        android:paddingRight="3dp"
+   		        android:paddingBottom="3dp"
+   		        android:layout_marginRight="5dp"
+   		        android:layout_marginLeft="5dp"
+   		        >
+   		        <RelativeLayout 
+   		             
+   		            android:layout_width="fill_parent"
+   		            android:layout_height="wrap_content"   		            
+   		            android:background="@color/white"
+   		            android:padding="3dp"
+   		            >
+   		            <LinearLayout 
+   		                android:layout_width="fill_parent"
+   		                android:layout_height="wrap_content"
+   		                android:orientation="vertical">
+   		                <TextView 
+   	            			 
+   	            			android:layout_width="fill_parent"
+   	            			android:layout_height="wrap_content"
+   	            			android:text="属性"
+   	            			android:textColor="@color/blue"       		 
+        					android:textSize="16sp"
+        					android:padding="2dp"/>
+   		                <ImageView  
+							android:layout_width="fill_parent"
+							android:layout_height="1dip"
+							android:layout_marginTop="3dp"
+							android:layout_marginBottom="3dp"
+							android:background="@color/note_gray" />
+   		               <LinearLayout 
+   		                	 
+   		                	android:layout_width="fill_parent"
+   		                	android:layout_height="wrap_content"
+   		                	android:padding="2dp"
+   		                	android:orientation="horizontal">
+   		                	<TextView 
+       		            		android:layout_width="wrap_content"
+       		            		android:layout_height="wrap_content"
+       		            		android:text="名称:"
+       		            		android:textColor="@color/grey21"
+       		            		android:textSize="16sp" />
+   		                	<TextView 
+   		                	    android:id="@+id/food_detail_name"
+   		                    	android:layout_width="wrap_content"
+   		                    	android:layout_height="wrap_content"
+   		                    	android:text="大江 照烧腿排米汉堡 微波1500g 早餐 速食 限江浙沪"
+   		                    	android:textColor="@color/orange"
+   		                    	android:textSize="16sp"
+   		                    	android:layout_marginLeft="10dp"/>
+   		            	</LinearLayout> 
+   		            	
+   		                <LinearLayout 
+   		                	 
+   		                	android:layout_width="fill_parent"
+   		                	android:layout_height="wrap_content"
+   		                	android:padding="2dp"
+   		                	android:orientation="horizontal">
+   		                	<TextView 
+       		            		android:layout_width="wrap_content"
+       		            		android:layout_height="wrap_content"
+       		            		android:text="地点:"
+       		            		android:textColor="@color/grey21"
+       		            		android:textSize="16sp" />
+   		                	<TextView 
+   		                	    android:id="@+id/food_detail_where"
+   		                    	android:layout_width="wrap_content"
+   		                    	android:layout_height="wrap_content"
+   		                    	android:text="安徽省合肥市肥东经济开发区金阳南路与衡大路交叉口"
+   		                    	android:textColor="@color/orange"
+   		                    	android:textSize="16sp"
+   		                    	android:layout_marginLeft="10dp"/>
+   		            	</LinearLayout> 
+   		               
+   		               <LinearLayout 
+   		                	 
+   		                	android:layout_width="fill_parent"
+   		                	android:layout_height="wrap_content"
+   		                	android:padding="2dp"
+   		                	android:orientation="horizontal">
+   		                	<TextView 
+       		            		android:layout_width="wrap_content"
+       		            		android:layout_height="wrap_content"
+       		            		android:text="派送时间:"
+       		            		android:textColor="@color/grey21"
+       		            		android:textSize="16sp" />
+   		                	<TextView 
+   		                	    android:id="@+id/food_detail_time"
+   		                    	android:layout_width="wrap_content"
+   		                    	android:layout_height="wrap_content"
+   		                    	android:text="10:00-22:00"
+   		                    	android:textColor="@color/orange"
+   		                    	android:textSize="16sp"
+   		                    	android:layout_marginLeft="10dp"/>
+   		            	</LinearLayout> 
+   		            	
+   		               <LinearLayout 
+   		                	 
+   		                	android:layout_width="fill_parent"
+   		                	android:layout_height="wrap_content"
+   		                	android:padding="2dp"
+   		                	android:orientation="horizontal">
+   		                	<TextView 
+       		            		android:layout_width="wrap_content"
+       		            		android:layout_height="wrap_content"
+       		            		android:text="价格:"
+       		            		android:textColor="@color/grey21"
+       		            		android:textSize="16sp" />
+   		                	<TextView 
+   		                	    android:id="@+id/food_detail_money"
+   		                    	android:layout_width="wrap_content"
+   		                    	android:layout_height="wrap_content"
+   		                    	android:text="￥19.9 元"
+   		                    	android:textColor="@color/orange"
+   		                    	android:textSize="16sp"
+   		                    	android:layout_marginLeft="10dp"/>
+   		            	</LinearLayout> 
+   		               	
+   		                <LinearLayout 
+   		                	 
+   		                	android:layout_width="fill_parent"
+   		                	android:layout_height="wrap_content"
+   		                	android:padding="2dp"
+   		                	android:orientation="horizontal">
+   		                	<TextView 
+       		            		android:layout_width="wrap_content"
+       		            		android:layout_height="wrap_content"
+       		            		android:text="长号:"
+       		            		android:textColor="@color/grey21"
+       		            		android:textSize="16sp" />
+   		                	<TextView 
+   		                	    android:id="@+id/food_detail_longtel"
+   		                    	android:layout_width="wrap_content"
+   		                    	android:layout_height="wrap_content"
+   		                    	android:text="13760048757"
+   		                    	android:textColor="@color/orange"
+   		                    	android:textSize="16sp"
+   		                    	android:layout_marginLeft="10dp"/>
+   		                	<Button 
+   		                	    android:id="@+id/food_detail_longphone"
+   		                	    android:layout_width="wrap_content"
+   		                	    android:layout_height="wrap_content"
+   		                	    android:background="@drawable/phone_button"
+   		                	    android:layout_marginLeft="10dp"
+   		                	    />
+   		                	
+   		            	</LinearLayout> 
+   		            	
+   		                <LinearLayout 
+   		                	 
+   		                	android:layout_width="fill_parent"
+   		                	android:layout_height="wrap_content"
+   		                	android:padding="2dp"
+   		                	android:orientation="horizontal">
+   		                	<TextView 
+       		            		android:layout_width="wrap_content"
+       		            		android:layout_height="wrap_content"
+       		            		android:text="短号:"
+       		            		android:textColor="@color/grey21"
+       		            		android:textSize="16sp" />
+   		                	<TextView 
+   		                	    android:id="@+id/food_detail_shorttel"
+   		                    	android:layout_width="wrap_content"
+   		                    	android:layout_height="wrap_content"
+   		                    	android:text="658757"
+   		                    	android:textColor="@color/orange"
+   		                    	android:textSize="16sp"
+   		                    	android:layout_marginLeft="10dp"/>
+   		                	
+   		                	<Button 
+   		                	    android:id="@+id/food_detail_shortphone"
+   		                	    android:layout_width="wrap_content"
+   		                	    android:layout_height="wrap_content"
+   		                	    android:background="@drawable/phone_button"
+   		                	    android:layout_marginLeft="10dp"
+   		                	    />
+   		            	</LinearLayout> 
+   		            	
+   		                
+   		                
+   		            </LinearLayout>
+   		            
+   		        </RelativeLayout>
+   		        
+   		    </RelativeLayout>
+   		    
+   		   	 <RelativeLayout 
+   		        
+   		        android:layout_width="fill_parent"
+   		        android:layout_height="wrap_content"
+   		        android:background="#CCCCCC"
+   		        android:paddingRight="3dp"
+   		        android:paddingBottom="3dp"
+   		        android:layout_marginRight="5dp"
+   		        android:layout_marginLeft="5dp"
+   		        android:layout_marginTop="6dp"
+   		        >
+   		        <RelativeLayout 
+   		            
+   		            android:layout_width="fill_parent"
+   		            android:layout_height="wrap_content"   		            
+   		            android:background="@color/white"
+   		            android:padding="3dp"
+   		            >
+   		            <TextView 
+   		                android:id="@+id/food_detail_miaosu"
+   		                android:layout_width="fill_parent"
+        				android:layout_height="wrap_content"
+        				android:text="描述"
+        				android:textColor="@color/blue"
+       		            android:textSize="16sp"
+       		            android:padding="2dp"
+   		                />
+   		            <ImageView  
+   		                android:id="@+id/food_detail_img"
+   		                android:layout_below="@id/food_detail_miaosu"  	
+						android:layout_width="fill_parent"
+						android:layout_height="1dip"
+						android:layout_marginTop="3dp"
+						android:layout_marginBottom="3dp"
+						android:background="@color/note_gray" />
+   		            <WebView            	   		    			 
+        				android:id="@+id/food_detail_webview"    
+        				android:layout_below="@id/food_detail_img"  	
+        				android:layout_width="fill_parent"
+        				android:layout_height="wrap_content"
+        				android:layout_marginTop="5dp"
+        				android:layout_marginBottom="5dp"
+        				android:background="@color/white"
+        				android:scrollbars="none"/>
+   		            
+   		        </RelativeLayout>
+   		    </RelativeLayout>
+		</LinearLayout>
+   	    
+       </ScrollView>
+</RelativeLayout>

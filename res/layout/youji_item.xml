@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg"
+    android:padding="2dp">
+    
+    <TextView 
+        android:id="@+id/youji_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="五月，走进梦里的凤凰古城！" 
+        android:layout_marginTop="4dp"
+        android:textColor="@color/grey"
+        android:textSize="17sp"
+        android:layout_marginRight="10dp" 
+        android:gravity="left"
+        android:singleLine="true"
+        android:layout_marginLeft="2dp"
+     />
+    
+    <TextView 
+        android:id="@+id/youji_item_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="2013-04-29"
+        android:textSize="15sp"
+        android:layout_below="@id/youji_item_name"
+        android:gravity="left"
+        android:textColor="@color/orange"
+        android:layout_marginLeft="2dp"
+        />
+      
+     <RelativeLayout 
+        android:id="@+id/youji_item_cover_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:padding="2dp"
+        android:background="@color/gray"
+        android:layout_alignParentRight="true"
+        >
+        <ImageView 
+            android:id="@+id/youji_item_covert"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hotel"
+            />
+     </RelativeLayout>
+</RelativeLayout>

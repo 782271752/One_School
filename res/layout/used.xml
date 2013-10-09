@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    >
+    <RelativeLayout
+        android:id="@+id/used_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/ab_solid_custom_blue_inverse_holo"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/used_back"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/back_button"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/v5_0_1_flipper_head_back" />
+		<View
+		    android:layout_toRightOf="@id/used_back"
+            android:layout_width="2px"
+            android:layout_height="fill_parent"
+            android:layout_margin="2dip"
+            android:src="@drawable/v5_0_1_flipper_head_separator"
+            android:background="#fff0f0f0" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            
+            android:gravity="center"
+            android:text="二手平台"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+   
+   	<li.widget.CommentListView
+   	    android:id="@+id/used_list"
+   	    android:layout_below="@id/used_title_layout"
+   	    android:divider="@null"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="fill_parent"
+   	    android:background="@color/gray"
+   	    android:cacheColorHint="@color/gray"
+   	    android:listSelector="@color/white"
+   	    />
+    
+</RelativeLayout>

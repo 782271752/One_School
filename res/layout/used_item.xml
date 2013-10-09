@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/news_item_background"
+    android:layout_margin="10dp"
+    android:padding="4dp"
+    android:orientation="vertical">
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView 
+        	 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="标签:" 
+        	android:textColor="@color/grey21"
+        	android:textSize="16sp"
+        	android:singleLine="true"/>
+        <TextView 
+        	 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="#" 
+        	android:textColor="@color/blue"
+        	android:textSize="16sp"
+        	android:layout_marginLeft="5dp"
+        	 />
+        <TextView 
+        	android:id="@+id/used_item_name"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="电脑" 
+        	android:textColor="@color/blue"
+        	android:textSize="16sp"
+        	android:singleLine="true"/>
+    </LinearLayout>
+    
+    
+     
+    
+     <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView        	 
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="价格:" 
+        	android:textColor="@color/grey21"
+        	android:textSize="16sp"
+        	 />
+       <TextView       	 
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="￥" 
+        	android:textColor="@color/orange"
+        	android:textSize="16sp"
+        	android:layout_marginLeft="5dp"
+        	android:singleLine="true"/>
+        <TextView 
+        	android:id="@+id/used_item_money"     	 
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="400" 
+        	android:textColor="@color/orange"
+        	android:textSize="16sp"
+        	android:singleLine="true"/>
+    </LinearLayout>
+     
+     <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView 
+        	 
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="成新:" 
+        	android:textColor="@color/grey21"
+        	android:textSize="16sp"
+        	 />
+      
+        <TextView 
+        	android:id="@+id/used_item_into_new"
+        	android:layout_marginLeft="5dp"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="9成新" 
+        	android:textColor="@color/grey21"
+        	android:textSize="16sp"
+        	android:singleLine="true"/>
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView 
+        	 
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="详情:" 
+        	android:textColor="@color/grey21"
+        	android:textSize="16sp"
+        	 />
+      
+        <TextView 
+        	android:id="@+id/used_item_describe"
+        	android:layout_marginLeft="5dp"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="有急用，想买的请短信我，绝对9成新以上，详情请看上面的那张图片。记住联系电话别搞错了啊！" 
+        	android:textColor="@color/grey21"
+        	android:textSize="16sp"
+        	android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

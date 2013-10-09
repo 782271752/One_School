@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <FrameLayout 
+        	android:id="@android:id/tabcontent"
+        	android:layout_width="fill_parent"
+        	android:layout_height="0.0dip"
+        	android:layout_weight="1.0"/>
+            
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+        
+        <RelativeLayout
+            android:id="@+id/console_line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:orientation="horizontal" 
+            >
+             
+            <RadioGroup
+                android:id="@+id/main_tab_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/ab_solid_custom_blue_inverse_holo"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+				
+                <RadioButton
+                    android:id="@+id/main_home"
+                    style="@style/tab_radio"
+                    android:checked="true"
+                    android:drawableTop="@drawable/home"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:text="首页" />
+                <RadioButton
+                    android:id="@+id/main_message"
+                    android:text="消息"
+                    style="@style/tab_radio"
+                    android:drawableTop="@drawable/message"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    />
+                <RadioButton
+                    android:id="@+id/main_sort"
+                    style="@style/tab_radio"
+                    android:drawableTop="@drawable/menu"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:text="分类" />
+                
+                
+                 <RadioButton 
+                    android:id="@+id/main_search"
+                    style="@style/tab_radio"
+                    android:drawableTop="@drawable/search"
+                    android:textColor="@color/white"
+                    android:text="搜索"
+                    android:textSize="12sp"
+                    />
+                <RadioButton
+                    android:id="@+id/main_more"
+                    android:text="更多"
+                    style="@style/tab_radio"
+                    android:drawableTop="@drawable/more"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    />
+                
+            </RadioGroup>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+   
+</TabHost>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:paddingBottom="3dp"
+    android:paddingRight="3dp"
+     
+    >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:padding="4dp"
+        android:background="@color/white"
+         
+        >
+    <TextView 
+        android:id="@+id/jiaxiao_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="肇庆嘉骏驾驶培训学校" 
+        android:textColor="@color/brown"
+        android:textSize="22sp"
+        android:gravity="left"
+        android:drawablePadding="4dp"
+        android:drawableRight="@drawable/food_img"
+        android:singleLine="true"/>
+     
+             
+    <TextView 
+        android:id="@+id/jiaxiao_item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥3999"
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        android:layout_below="@id/jiaxiao_item_name"/>
+     
+            
+     
+        </RelativeLayout>
+</LinearLayout>
